@@ -1,11 +1,10 @@
-
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useState } from "react";
 import { useToast } from "@/components/ui/use-toast";
-import { Instagram, Mail } from 'lucide-react';
+import { Instagram, Mail, Linkedin, Github } from 'lucide-react';
 import CodeRain from './CodeRain';
 import emailjs from 'emailjs-com';
 
@@ -91,7 +90,9 @@ const Contact = () => {
               <ContactInfo 
                 icon={<Mail className="h-4 w-4 sm:h-5 sm:w-5" />} 
                 title="Email"
-                content="iletisim@sinagulec.com"
+                content="toprakgulec34@gmail.com"
+                isLink={true}
+                link="mailto:toprakgulec34@gmail.com"
               />
               
               <ContactInfo 
@@ -101,7 +102,9 @@ const Contact = () => {
                   </svg>
                 } 
                 title="Telefon"
-                content="+90 555 123 4567"
+                content="+90 533 963 3305"
+                isLink={true}
+                link="tel:+905339633305"
               />
               
               <ContactInfo 
@@ -116,11 +119,25 @@ const Contact = () => {
               />
               
               <ContactInfo 
-                icon={<Instagram className="h-4 w-4 sm:h-5 sm:w-5" />}
+                icon={<Instagram className="h-4 w-4 sm:h-5 sm:w-5" />} 
                 title="Instagram"
-                content="@sinatoprakgulec"
+                content="@toprakgulecc02"
                 isLink={true}
-                link="https://instagram.com/sinatoprakgulec"
+                link="https://www.instagram.com/toprakgulecc02/"
+              />
+              <ContactInfo 
+                icon={<Linkedin className="h-4 w-4 sm:h-5 sm:w-5" />} 
+                title="LinkedIn"
+                content="linkedin.com/in/sina-toprak-gulec-26761923b"
+                isLink={true}
+                link="https://www.linkedin.com/in/sina-toprak-gulec-26761923b/"
+              />
+              <ContactInfo 
+                icon={<Github className="h-4 w-4 sm:h-5 sm:w-5" />} 
+                title="GitHub"
+                content="github.com/trimaticthread"
+                isLink={true}
+                link="https://github.com/trimaticthread"
               />
             </div>
           </div>
